@@ -1,0 +1,6 @@
+c:\users\maksim_trayanovich\documents\visual studio 2015\Projects\Lesson2.Task1\Lesson2.Task1\bin\Debug\Lesson2.Task1.exe.config
+c:\users\maksim_trayanovich\documents\visual studio 2015\Projects\Lesson2.Task1\Lesson2.Task1\bin\Debug\Lesson2.Task1.exe
+c:\users\maksim_trayanovich\documents\visual studio 2015\Projects\Lesson2.Task1\Lesson2.Task1\bin\Debug\Lesson2.Task1.pdb
+c:\users\maksim_trayanovich\documents\visual studio 2015\Projects\Lesson2.Task1\Lesson2.Task1\obj\Debug\Lesson2.Task1.csprojResolveAssemblyReference.cache
+c:\users\maksim_trayanovich\documents\visual studio 2015\Projects\Lesson2.Task1\Lesson2.Task1\obj\Debug\Lesson2.Task1.exe
+c:\users\maksim_trayanovich\documents\visual studio 2015\Projects\Lesson2.Task1\Lesson2.Task1\obj\Debug\Lesson2.Task1.pdb

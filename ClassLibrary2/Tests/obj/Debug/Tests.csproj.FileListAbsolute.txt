@@ -1,0 +1,8 @@
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\bin\Debug\Tests.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\bin\Debug\Tests.pdb
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\bin\Debug\ClassLibrary2.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\bin\Debug\ClassLibrary2.pdb
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\obj\Debug\Tests.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\Tests\obj\Debug\Tests.pdb

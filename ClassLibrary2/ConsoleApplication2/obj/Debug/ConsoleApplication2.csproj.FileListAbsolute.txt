@@ -1,0 +1,15 @@
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\ClassLibrary2.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\nunit.framework.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\WebDriver.dll
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\nunit.framework.xml
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\bin\Debug\WebDriver.xml
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\obj\Debug\ConsoleApplication2.Resource1.resources
+C:\Users\Maksim_Trayanovich\Documents\Visual Studio 2015\Projects\ClassLibrary2\ConsoleApplication2\obj\Debug\ConsoleApplication2.csproj.GenerateResource.Cache
