@@ -31,62 +31,39 @@ namespace Lesson2.Task2
             if (int.TryParse(currentLine, out currentInt))
             {
                 ListOfIntegers.Add(currentInt);
-                currentDouble = (double)currentInt;
-                ListOfDoubles.Add(currentDouble);
+                //ListOfDoubles.Add((double)currentInt);
             }
             else
-            if (double.TryParse(currentLine, out currentDouble))
-            {
-                ListOfDoubles.Add(currentDouble);
-            }
-            else
-            {
-                ListOfStrings.Add(currentLine);
-            }
+                if (double.TryParse(currentLine.Replace(",","."), out currentDouble))
+                {
+                    ListOfDoubles.Add(currentDouble);
+                }
+                else
+                {
+                    ListOfStrings.Add(currentLine);
+                }
         }
 
         //Метод сортирует значения списка стрингов по длине, при равной длине - по коду символов
         public void OrderListOfStringsByLengthThenBySymbols()
         {
-            ListOfStrings = new List<string>(ListOfStrings.OrderBy(x => x.Length).ThenBy(x => x));
+            ListOfStrings = ListOfStrings.OrderBy(x => x.Length).
+                            ThenBy(x => x).
+                            ToList();
         }
 
         //Метод возвращает среднее значение списка double
         public double GetAverageOfDoubles()
         {
-            double sum = GetSumOfDoubles();
-            double average = sum / ListOfDoubles.Count;
+            double average = ListOfDoubles.Average();
             return average;
         }
 
         //Метод возвращает среднее значение списка int
         public double GetAverageOfIntegers()
         {
-            double sum = GetSumOfIntegers();
-            double average = sum / ListOfIntegers.Count;
+            double average = ListOfIntegers.Average();
             return average;
-        }
-
-        //Метод возвращает сумму всех значений списка double
-        public double GetSumOfDoubles()
-        {
-            double sum = 0;
-            foreach (double d in ListOfDoubles)
-            {
-                sum += d;
-            }
-            return sum;
-        }
-
-        //Метод возвращает среднее значение списка int
-        public double GetSumOfIntegers()
-        {
-            double sum = 0;
-            foreach (double d in ListOfIntegers)
-            {
-                sum += d;
-            }
-            return sum;
         }
     }
 }
