@@ -31,7 +31,7 @@ namespace Lesson2.Task2
             if (int.TryParse(currentLine, out currentInt))
             {
                 ListOfIntegers.Add(currentInt);
-                //ListOfDoubles.Add((double)currentInt);
+                //ListOfDoubles.Add((double)currentInt); //- нужно ли добавлять целые в список с вещественными
             }
             else
                 if (double.TryParse(currentLine.Replace(",","."), out currentDouble))
