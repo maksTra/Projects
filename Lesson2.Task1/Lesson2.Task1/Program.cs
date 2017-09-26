@@ -74,7 +74,6 @@ namespace Lesson2.Task1
         //Метод, редактирующий текст
         public string EditText(string text)
         {
-            //не нашел способа сплитить с сохранением разделителей, поэтому так
             text = text.ToLower().Replace(".", ".\n").Replace("!", "!\n").Replace("?", "?\n");
             string[] substrings = text.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < substrings.Length; i++)

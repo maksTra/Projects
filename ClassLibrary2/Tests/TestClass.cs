@@ -11,12 +11,12 @@ namespace Tests
     [TestClass]
     public class TestClass
     {
-        private Class1 c;
+        private Calculator c;
 
         [TestInitialize]
         public void SetUp()
         {
-            c = new Class1();
+            c = new Calculator();
         }
 
         [TestMethod]

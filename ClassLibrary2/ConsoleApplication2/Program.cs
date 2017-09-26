@@ -36,10 +36,12 @@ namespace ConsoleApplication2
             }
             catch (Exception e)
             {
+                //в случае, если в файле конфигураций будет прописано неверное действие, то метод GetInputData бросит Exception
                 Console.WriteLine("Wrong configuration");
             }
             Console.ReadKey();
         }
+
 
         //Метод, считывающий данные в зависимости от источника
         public void GetInputData(ref string input1, ref string input2)
@@ -65,7 +67,7 @@ namespace ConsoleApplication2
             }
         }
         
-        //Метод, проверяющий, можно ли конверировать входные данные в double
+        //Метод, проверяющий, можно ли конверировать входные данные в double. Если можно то изменяет converted1 и converted2
         public bool CheckData(string input1, string input2, ref double converted1, ref double converted2)
         {
             return (Double.TryParse(input1, out converted1) && Double.TryParse(input2, out converted2));
