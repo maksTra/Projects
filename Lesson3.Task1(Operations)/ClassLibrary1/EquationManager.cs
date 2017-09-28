@@ -21,7 +21,6 @@ namespace ClassLibrary1
             {
                 throw new WrongArgumentAException();
             }
-
             double d = b * b - 4 * a * c;
             if (d < 0)
             {

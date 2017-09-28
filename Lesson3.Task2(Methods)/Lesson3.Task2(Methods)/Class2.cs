@@ -9,11 +9,11 @@ namespace Lesson3.Task2_Methods_
 {
     public class FiboAndFactor
     {
-        public static List<BigInteger> FibonacciSequence;
+        //public static List<BigInteger> FibonacciSequence;
 
         public static BigInteger FindFibo(int n)
         {
-            FibonacciSequence = new List<BigInteger>();
+            //FibonacciSequence = new List<BigInteger>();
 
             BigInteger member1 = new BigInteger(0);
             BigInteger member2 = new BigInteger(1);
