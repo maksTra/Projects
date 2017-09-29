@@ -54,6 +54,7 @@ namespace ConsoleApplication1
             Console.WriteLine($"x = {x: 0.00}");
         }
 
+        //Общение с пользователем, решая квадратное уравнение
         public static void TalkWithUserSolvingQuadratic()
         {
             //решаем квадратное уравнение
@@ -84,6 +85,7 @@ namespace ConsoleApplication1
             }
         }
 
+        //Общение с пользователем, решая матрицы
         public static void TalkWithUserSolvingMatricies()
         {
             //перемножаем матрицы

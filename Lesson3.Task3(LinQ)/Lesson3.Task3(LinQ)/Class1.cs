@@ -11,8 +11,9 @@ namespace Lesson3.Task3_LinQ_
     public static class LinQTask
     {
         public static List<BigInteger> FibonacciSequence;
-        private static List<BigInteger> prime = new List<BigInteger> { 2, 3, 5, 7, 11, 13 };
+       
 
+        //Заполняет лист FibonacciSequence до n-го элемента
         public static BigInteger FindFibo(int n)
         {
             FibonacciSequence = new List<BigInteger>();
@@ -57,10 +58,13 @@ namespace Lesson3.Task3_LinQ_
         //Вычислите квадратные корни (округленные до целого вниз) всех чисел, которые имеют в составе цифру 2;
         public static List<BigInteger> GetListOfSquareRootsOfNumbersThatContains2()
         {
-            return FibonacciSequence.Where(i => i.Contains2()).Select(i => (BigInteger) (Math.Exp(BigInteger.Log(i) / 2))).ToList();
+            return FibonacciSequence
+                .Where(i => i.Contains2())
+                .Select(i => (BigInteger) (Math.Exp(BigInteger.Log(i) / 2)))
+                .ToList();
         }
 
-        //Отсортируйте числа по убывания их второй цифры;
+        //Отсортируйте числа по убыванию их второй цифры;
         public static List<BigInteger> OrderByDescendingOfSecondNumber()
         {
             return FibonacciSequence.Select(i => i.ToString()).

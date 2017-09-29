@@ -13,7 +13,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            LinQTask.FindFibo(200);
+            LinQTask.FindFibo(45);
 
 
             Console.WriteLine("Fibonacci Sequense:");
