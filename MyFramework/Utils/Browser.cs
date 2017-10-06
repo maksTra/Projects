@@ -38,5 +38,11 @@ namespace FrameworkTask
             WebDriverWait wait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(timeoutInSeconds));
             wait.Until(ExpectedConditions.ElementToBeClickable(element));
         }
+
+        public static void WaitUntilElementIsDisplayed(By by, int timeoutInSeconds)
+        {
+            WebDriverWait wait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(timeoutInSeconds));
+            wait.Until(ExpectedConditions.PresenceOfAllElementsLocatedBy(by));
+        }
     }
 }

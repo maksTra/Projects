@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1CC168C-CF21-4F52-A675-B5DE6BAB80AC}</ProjectGuid>
+    <ProjectGuid>{ABDEE737-D3BD-4593-AFB6-8C347CA4A286}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Utils</RootNamespace>
-    <AssemblyName>Utils</AssemblyName>
+    <RootNamespace>MyFramework</RootNamespace>
+    <AssemblyName>MyFramework</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,12 +53,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Browser.cs" />
-    <Compile Include="Driver.cs" />
+    <Compile Include="AdvancedSearchPage.cs" />
+    <Compile Include="ArticlePage.cs" />
+    <Compile Include="CurrentIssuePage.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="JournalPage.cs" />
+    <Compile Include="LoginPage.cs" />
+    <Compile Include="Pages.cs" />
+    <Compile Include="ResultSearchPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{043A922B-376D-4EB2-9DF7-2ACABF6EB6E3}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{f1cc168c-cf21-4f52-a675-b5de6bab80ac}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,7 +7,7 @@ using FrameworkTask;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace MyFramework
+namespace BusinessLogic
 {
     public class AdvancedSearchPage
     {

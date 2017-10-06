@@ -3,23 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Data;
 using FrameworkTask;
+using Microsoft.Win32;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.Events;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 
-namespace BL
+namespace BusinessLogic
 {
-    class LoginPage
+    public class LoginPage
     {
-        [FindsBy(How = How.XPath, Using = "id(\"ctl00_ctl45_g_818e981e_cd12_4836_8e55_9fe5e199454d_ctl00_LoginControl_txt_UserName\")")]
+        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'txt_UserName')]")]
         private IWebElement usernameField;
 
-        [FindsBy(How = How.XPath, Using = "id(\"ctl00_ctl45_g_818e981e_cd12_4836_8e55_9fe5e199454d_ctl00_LoginControl_txt_Password\")")]
+        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'txt_Password')]")] 
         private IWebElement passwordField;
 
-        [FindsBy(How = How.XPath, Using = "id(\"ctl00_ctl45_g_818e981e_cd12_4836_8e55_9fe5e199454d_ctl00_LoginControl_LoginButton\")")]
+        [FindsBy(How = How.XPath, Using = "//*[contains(@id, 'LoginButton')]")]
         private IWebElement loginButton;
 
         public void Goto()
@@ -34,8 +36,8 @@ namespace BL
 
         public void LogIn()
         {
-            usernameField.SendKeys("TestName");
-            passwordField.SendKeys("test1test");
+            usernameField.SendKeys(User.Name);
+            passwordField.SendKeys(User.Password);
             loginButton.Click();
         }
     }
