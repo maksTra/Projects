@@ -24,13 +24,13 @@ namespace FrameworkTask
         {
             switch (browser)
             {
-                case "Chrome":
+                /*case "Chrome":
                     driver = new ChromeDriver();
-                    break;
+                    break;*/
                 case "Firefox":
                     driver = new FirefoxDriver();
                     break;
-                case "Edge":
+               /* case "Edge":
                     driver = new EdgeDriver();
                     break;
                 case "IE":
@@ -41,7 +41,7 @@ namespace FrameworkTask
                     break;
                 case "Opera":
                     driver = new OperaDriver();
-                    break;
+                    break;*/
             }
             return driver;
         }
