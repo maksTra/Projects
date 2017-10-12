@@ -18,18 +18,18 @@ namespace BusinessLogic
             return page;
         }
 
-        public static HomePage HomePage => GetPage<HomePage>();
+        public static HomePage HomePage { get { return GetPage<HomePage>(); } }
 
-        public static LoginPage LoginPage => GetPage<LoginPage>();
+        public static LoginPage LoginPage { get { return GetPage<LoginPage>(); } }
 
-        public static AdvancedSearchPage AdvancedSearchPage => GetPage<AdvancedSearchPage>();
-        
-        public static ResultSearchPage ResultSearchPage => GetPage<ResultSearchPage>();
+        public static AdvancedSearchPage AdvancedSearchPage { get { return GetPage<AdvancedSearchPage>(); } }
 
-        public static ArticlePage ArticlePage => GetPage<ArticlePage>();
+        public static ResultSearchPage ResultSearchPage { get { return GetPage<ResultSearchPage>(); } }
 
-        public static JournalPage JournalPage => GetPage<JournalPage>();
+        public static ArticlePage ArticlePage { get { return GetPage<ArticlePage>(); } }
 
-        public static CurrentIssuePage CurrentIssuePage => GetPage<CurrentIssuePage>();
+        public static JournalPage JournalPage { get { return GetPage<JournalPage>(); } }
+
+        public static CurrentIssuePage CurrentIssuePage { get { return GetPage<CurrentIssuePage>(); } }
     }
 }
