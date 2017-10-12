@@ -40,7 +40,7 @@ namespace BusinessLogic
             var listOfLetters = panelWithLetters.FindElements(By.TagName("a"));
             var randomLetter = listOfLetters.Skip(new Random().Next(listOfLetters.Count)).Take(1).First();
             randomLetter.Click();
-            Browser.WaitUntilElementIsDisplayed(By.XPath($"//span[text()='{randomLetter.Text}']"),10);
+            Browser.WaitUntilElementIsDisplayed(By.XPath("//span[text()='"+ randomLetter.Text+"']"),10);
         }
 
         public void GotoRandomJournal()
