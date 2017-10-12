@@ -8,7 +8,7 @@ namespace Data
 {
     public class User
     {
-        public static string Name { get; set; } = "TestName";
-        public static string Password { get; set; } = "test1test";
+        public static string Name = "TestName";
+        public static string Password = "test1test";
     }
 }
