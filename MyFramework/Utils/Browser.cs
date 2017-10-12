@@ -27,7 +27,7 @@ namespace FrameworkTask
             WebDriver.Quit();
         }
 
-        public static string Title => WebDriver.Title;
+        public static string Title { get { return WebDriver.Title; } }
 
         public static void WaitUntilElementIsDisplayed(IWebElement element, int timeoutInSeconds)
         {
