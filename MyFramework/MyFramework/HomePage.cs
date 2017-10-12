@@ -48,7 +48,6 @@ namespace BusinessLogic
             var listOfJournals = spanOfJournals.FindElements(By.TagName("article"));
             var randomJournal = listOfJournals.Skip(new Random().Next(listOfJournals.Count)).Take(1).Select(x => x.FindElement(By.XPath("//h4/a"))).First();
             randomJournal.Click();
-            //Browser.WaitUntilElementIsDisplayed(By.LinkText("Journal Logo"),10);
         }
 
         public bool IsAt()

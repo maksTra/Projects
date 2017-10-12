@@ -11,6 +11,7 @@ namespace BusinessLogic
 {
     public class ResultSearchPage
     {
+
         [FindsBy(How = How.XPath, Using = @"//div[@class='wp-feature-articles']")]
         protected IWebElement ArticlesList { get; set; }
 

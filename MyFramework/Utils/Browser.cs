@@ -8,15 +8,11 @@ namespace FrameworkTask
     public class Browser
     {
         public static IWebDriver WebDriver { get; private set; }
-        private static string baseUrl = "http://journals.lww.com"; //переопределить в конфиге
+        private static string baseUrl = "http://journals.lww.com";
         
-        public static void Initialize()
+        public static void Initialize(string driverName)
         {
-            //вставить чтение того, какой драйвер будем загружать из конфига
-            //пока все сделаем на FireFox
-            WebDriver = Driver.GetDriver("Firefox");
-
-            WebDriver.Manage().Timeouts();
+            WebDriver = Driver.GetDriver(driverName);
             WebDriver.Manage().Window.Maximize();
             Goto("");
         }

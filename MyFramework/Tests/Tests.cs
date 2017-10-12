@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using BusinessLogic;
 using FrameworkTask;
 using NUnit.Framework;
-using BusinessLogic;
-using OpenQA.Selenium;
+
 
 namespace Tests
 {
@@ -18,7 +11,7 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
-           Browser.Initialize();
+           Browser.Initialize("Firefox");
         }
 
         [TearDown]
