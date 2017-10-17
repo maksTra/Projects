@@ -11,7 +11,7 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
-           Browser.Initialize("Firefox");
+           Browser.Initialize("Chrome");
         }
 
         [TearDown]
@@ -19,7 +19,6 @@ namespace Tests
         {
            Browser.Quit();
         }
-
        
         [Test]
         public void LoginChecking()

@@ -24,9 +24,12 @@ namespace FrameworkTask
         {
             switch (browser)
             {
-                /*case "Chrome":
-                    driver = new ChromeDriver();
-                    break;*/
+                case "Chrome":
+                    ChromeOptions options = new ChromeOptions();
+                    options.AddExtension(@"C:\Users\Maksim_Trayanovich\Downloads\gighmmpiobklfepjocnamgkkbiglidom-3.17.0-Crx4Chrome.com.crx");
+                    options.AddArgument("start-maximized");
+                    driver = new ChromeDriver(options);                    
+                    break;
                 case "Firefox":
                     driver = new FirefoxDriver();
                     break;

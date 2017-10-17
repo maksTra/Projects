@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FrameworkTask;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using MyFramework.PageObjects;
 
 namespace BusinessLogic
 {
@@ -31,5 +32,7 @@ namespace BusinessLogic
         public static JournalPage JournalPage { get { return GetPage<JournalPage>(); } }
 
         public static CurrentIssuePage CurrentIssuePage { get { return GetPage<CurrentIssuePage>(); } }
+
+        public static JournalAdvancedSearch JournalAdvancedSearch { get { return GetPage<JournalAdvancedSearch>(); } }
     }
 }
