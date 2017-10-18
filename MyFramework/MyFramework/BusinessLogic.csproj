@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="Models\AdvancedSearchData.cs" />
     <Compile Include="Models\AdvancedSearchOptions.cs" />
+    <Compile Include="Models\AdvancedSearchQueryGenerator.cs" />
     <Compile Include="PageObjects\JournalAdvancedSearch.cs" />
     <Compile Include="JsonResult.cs" />
     <Compile Include="JSonGetter.cs" />

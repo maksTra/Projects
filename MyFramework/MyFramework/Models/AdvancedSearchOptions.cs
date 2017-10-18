@@ -99,7 +99,7 @@ namespace MyFramework.Models
 
         public AdvancedSearchOptions()
         {
-            AllFieldsKeyword = "default";
+            AllFieldsKeyword = "";
             TitleKeyword = "";
             AuthorKeyword = "";
             AbstractKeyword = "";

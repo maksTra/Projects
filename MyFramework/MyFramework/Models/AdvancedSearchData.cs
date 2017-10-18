@@ -33,6 +33,9 @@ namespace MyFramework.Models
                     case "all_dates":
                         aso.DateOption = aso.GetPublicationDates("alldates");
                         break;
+                    case "last_5_years":
+                        aso.DateOption = aso.GetPublicationDates("last5years");
+                        break;
                     case "open_access":
                         aso.AccessOption = aso.GetArticleAccess("openaccessonly");
                         break;

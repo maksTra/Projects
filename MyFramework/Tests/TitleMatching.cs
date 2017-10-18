@@ -1,6 +1,7 @@
 ﻿using BusinessLogic;
 using FrameworkTask;
 using MyFramework;
+using MyFramework.Steps;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -16,25 +17,18 @@ namespace Tests
     {
         [Test]
         public void Test_TitleMatching()
-        {            
-            string query = "{\"QueryString\":\"blood\",\"Products\":[\"PRECOS\"],\"FilterQueries\":[\"AssetType:(article)\"],\"QueryProcessingOptions\":{\"RecencyBoost\":\"None\",\"UseSynonyms\":true,\"BoostFields\":[{\"Name\":\"Title\",\"Value\":3.0},{\"Name\":\"Authors\",\"Value\":4.0}]},\"ResultSpec\":{\"Start\":0,\"CursorMark\":\"*\",\"Rows\":100,\"SortFields\":[{\"Name\":\"PublicationDate\",\"Order\":\"Descending\"}],\"Highlighting\":{\"Fields\":[\"Abstract\"]},\"ReturnFields\":[\"AccessionNumber\",\"AssetType\",\"Title\",\"ImageTitle\",\"ImageWkmrid\",\"OtherIds\",\"EpisodeUrl\",\"ImageID\"],\"Debug\":false}}";
-                        
-            Browser.Initialize("Chrome");            
-            Pages.JournalPage.GotoJournal("plasreconsurg");
-            Browser.WaitUntilElementIsDisplayed(Pages.JournalPage.AdvancedSearchButton,20);
-            Pages.JournalPage.GotoAdvancedSearch();
-            Thread.Sleep(2000);
+        {                     
+            Browser.Initialize("Chrome");
 
-            Pages.JournalAdvancedSearch.SearchWithData("all_keywords", "content_type_article", "cme");
+            AdvancedSearchSteps ass = new AdvancedSearchSteps("all_keywords", "content_type_article", "last_5_years");
+            ass.ChooseAdvancedSearchInJournal("plasreconsurg");
+            var titlesFromUI = ass.GetArticleTitlesFromUI();
+            var resultsFromJson = ass.GetArticlesFromAPI();
 
-            Pages.ResultSearchPage.SortByNewest();
-            Thread.Sleep(4000);                   
-            List<string> titlesFromUI = Pages.ResultSearchPage.GetFirst20Titles();
-            var titlesFromJson = JSonGetter.GetSearchResults(query);
-            for(int i=0; i<20;i++)
+            for(int i=0; i<8;i++)
             {
                 string a = titlesFromUI[i];
-                string b = titlesFromJson[i].Fields[2].FieldValue.ToString();
+                string b = resultsFromJson[i].Fields[2].FieldValue.ToString();
                 Assert.True(a.Contains(b));
             }         
         }

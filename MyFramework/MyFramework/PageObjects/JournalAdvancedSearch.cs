@@ -41,13 +41,11 @@ namespace MyFramework.PageObjects
         [FindsBy(How = How.XPath, Using = @"//label[contains(@for, 'articleAccessRadioButtonList_1')]")]
         public IWebElement OpenAccessOnlyRadioButton { get; set; }
         
-        public void SearchWithData(params string[] testScenarios)
-        {
-            AdvancedSearchData asd = new AdvancedSearchData();
-            var aso = asd.GetDataForAdvancedSearch(testScenarios);            
+        public void SearchWithData(AdvancedSearchOptions aso)
+        {                        
             Browser.WaitUntilElementIsDisplayed(AllFieldsField, 5);
             KeywordField.SendKeys(aso.AllFieldsKeyword);
-            ArticlesCheckBox.SendKeys(aso.TitleKeyword);
+            TitleField.SendKeys(aso.TitleKeyword);
             if((aso.ArticlesChkBox==true && !ArticlesCheckBox.Selected)||(aso.ArticlesChkBox == false && ArticlesCheckBox.Selected))
             {
                 ArticlesCheckBox.Click();
@@ -59,7 +57,15 @@ namespace MyFramework.PageObjects
             if((aso.ImagesChkBox==true && !ImagesCheckBox.Selected) || (aso.ImagesChkBox == false && ImagesCheckBox.Selected))
             {
                 ImagesCheckBox.Click();
-            }         
+            }
+            if(aso.AccessOption == AdvancedSearchOptions.ArticleAccess.OpenAccessOnly)
+            {
+                OpenAccessOnlyRadioButton.Click();
+            }
+            if(aso.DateOption == AdvancedSearchOptions.PublicationDates.Last5Years)
+            {
+                Last5YearsRadioButton.Click();            
+            }
             Browser.WaitUntilElementIsDisplayed(SearchButton, 5);
             SearchButton.Click();
         }
